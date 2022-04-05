@@ -1,0 +1,67 @@
+﻿@model object
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OAuth</title>
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" >
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+<div>
+    @if (ViewBag.IsLoginSuccess)
+    {
+        <div class="mdc-card">
+                <div class="mdc-button__ripple"></div>
+            <span class="mdc-button__label">Hello~ @ViewBag.UserName</span>
+            
+            @if (ViewBag.IsSubscribeSuccess)
+            {
+                <form action="/RevokeAll" method="post">
+                  <div class="mdc-card">
+                      <button type="submit"class="mdc-button foo-button">
+                          <div class="mdc-button__ripple"></div>
+                          <span class="mdc-button__label">RevokeAll</span>
+                      </button>
+                  </div>
+              </form>
+               
+            }
+            else
+            {
+                <form action="/lineNotify" method="post">
+                    <div class="mdc-card">
+                        <button type="submit"class="mdc-button foo-button">
+                            <div class="mdc-button__ripple"></div>
+                            <span class="mdc-button__label">Line Notify Subscribe</span>
+                        </button>
+                    </div>
+                </form>
+            }
+        </div>
+    }
+    else
+    {
+        <form action="/lineLogin" method="post">
+            <div class="mdc-card">
+                <button type="submit"class="mdc-button foo-button">
+                    <div class="mdc-button__ripple"></div>
+                    <span class="mdc-button__label">Line Login</span>
+                </button>
+            </div>
+        </form>
+    }
+</div>
+<script>
+    $(function() {
+        //mdc.ripple.MDCRipple.attachTo(document.querySelector('.foo-button'));
+    });
+</script>
+</body>
+</html>

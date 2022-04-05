@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31912.275
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAuthHomeWork", "OAuthHomeWork\OAuthHomeWork.csproj", "{B4B0F6D7-4EC9-46B2-BEEC-B087AF2F954D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B4B0F6D7-4EC9-46B2-BEEC-B087AF2F954D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4B0F6D7-4EC9-46B2-BEEC-B087AF2F954D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4B0F6D7-4EC9-46B2-BEEC-B087AF2F954D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4B0F6D7-4EC9-46B2-BEEC-B087AF2F954D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FCDC4176-3F9B-4D2B-818C-424E7956AD93}
+	EndGlobalSection
+EndGlobal
