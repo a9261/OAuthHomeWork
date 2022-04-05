@@ -30,8 +30,8 @@ namespace OAuthHomeWork.Controllers
         private readonly string _notifyClientId = "mzEPwTz9d7bdHCqcw3I0yi";
         private readonly string _notifySecretId = "N5zKXxH6wE3DSHtgLGIgKkdz2gqP9KBYGBIXUaAUfQq";
 
-        private readonly string _loginSuccessRedirectUrl = "http://localhost:5000/loginSuccessCallback";
-        private readonly string _subscribeSuccessRedirectUrl = "http://localhost:5000/subscribeSuccessCallback";
+        private readonly string _loginSuccessRedirectUrl = "https://lineoauthhomework.azurewebsites.net/loginSuccessCallback";
+        private readonly string _subscribeSuccessRedirectUrl = "https://lineoauthhomework.azurewebsites.net/subscribeSuccessCallback";
 
         private readonly string _envPath;
 
