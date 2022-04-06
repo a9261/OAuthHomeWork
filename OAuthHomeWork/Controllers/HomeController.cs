@@ -189,7 +189,9 @@ namespace OAuthHomeWork.Controllers
 
             await LineNotifySuccess(responseLoginToken.access_token);
 
-            return View("SubscribeSuccessCallback");
+            ViewBag.IsLoginSuccess = true;
+            ViewBag.IsSubscribeSuccess = true;
+            return View("Index");
         }
 
         [HttpPost]
