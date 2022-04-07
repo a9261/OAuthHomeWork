@@ -191,7 +191,7 @@ namespace OAuthHomeWork.Controllers
 
             ViewBag.IsLoginSuccess = true;
             ViewBag.IsSubscribeSuccess = true;
-            return View("Index");
+            return Redirect("/");
         }
 
         [HttpPost]
